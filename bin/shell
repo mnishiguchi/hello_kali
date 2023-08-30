@@ -2,5 +2,6 @@
 set -e
 
 IMAGE_NAME=hello-kali:latest
+CONTAINER_NAME=hello-kali
 
-docker run --interactive --tty --rm "$IMAGE_NAME" bash
+docker run --interactive --tty --rm --name "$CONTAINER_NAME" "$IMAGE_NAME" bash

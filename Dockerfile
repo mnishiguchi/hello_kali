@@ -7,4 +7,4 @@ RUN apt update && apt install --yes --fix-broken --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 RUN touch /root/.bashrc \
-  && echo -e 'neofetch' >> /root/.bashrc
+  && echo 'neofetch' >> /root/.bashrc
