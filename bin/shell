@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 set -e
 
-IMAGE_NAME=hello-kali
+IMAGE_NAME=hello-kali:latest
 
-docker run -it --rm "$IMAGE_NAME" bash
+docker run --interactive --tty --rm "$IMAGE_NAME" bash

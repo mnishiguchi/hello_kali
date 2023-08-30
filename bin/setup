@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 set -e
 
-IMAGE_NAME=hello-kali
+IMAGE_NAME=hello-kali:latest
 
-docker build -t "$IMAGE_NAME" .
+docker build --tag "$IMAGE_NAME" .
